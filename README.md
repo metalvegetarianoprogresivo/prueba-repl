@@ -22,7 +22,9 @@ A linked list is said to contain a cycle if any node is visited more than once w
 
 ## What you need to do...
 1. Create a data structure that will be used for your linked list.
-1. Create function that will receive one parameter: a pointer to a _node_ object named _head_ that points to the head of a linked list. Your function must return a boolean denoting whether or not there is a cycle in the list. If there is a cycle, return true; otherwise, return false.
+1. Create function that will receive one parameter: 
+    * `head` := A _node_ structure/object that is the _head_ of a linked list.
+1. Your function must return a boolean denoting whether or not there is a cycle in the list. If there is a cycle, return true; otherwise, return false.
 
 <br/>
 <br/>
@@ -40,24 +42,24 @@ Given a matrix _F_ of size _n_ by _m_ (where: _m_ >= _n_) filled with integer nu
   <img alt="diagonal sum 1" src="https://user-images.githubusercontent.com/7025727/72861810-98848400-3c90-11ea-813e-94678319b53b.png" width="600px">
 </p>
 
-In this case we start at corner _c_ of a matrix of size _n=3_ by _m=4_, which has the diagonal numbers: _[3, -7, -3]_. So we sum all the numbers: _3 + (-7) + (-3) = -7_. 
+In this case we start at corner _c_ of a matrix of size _n=3_ by _m=4_, which has the diagonal numbers: _[3, -7, -3]_. The sum of all these numbers is: _3 + (-7) + (-3) = -7_. 
 
-Our diagonal sum is **-7**.
+Our diagonal sum result is **-7**.
 
 **Another Example:**
 <p align="center"> 
   <img alt="diagonal sum 2" src="https://user-images.githubusercontent.com/7025727/72862397-a0ddbe80-3c92-11ea-8ddb-f814bff40b60.png" width="600px">
 </p>
 
-In this case we start at corner _a_ of a matrix of size _n=3_ by _m=3_, which has the diagonal numbers: _[-4, 8, 7]_. So we sum all the numbers: _-4 + 8 + 7 = 11_. 
+In this case we start at corner _a_ of a matrix of size _n=3_ by _m=3_, which has the diagonal numbers: _[-4, 8, 7]_. The sum of all these numbers is: _-4 + 8 + 7 = 11_. 
 
-Our diagonal sum is **11**.
+Our diagonal sum result is **11**.
 
 ## What you need to do...
 1. Create a function named `diagonalSum` that receives two arguments:
     1. `matrix`:= An _Array\[\]\[\]_ of size _n_ by _m_: **_Array\[n\]\[m\]_**.
     1. `corner` := A character that represents the corner (_a, b, c, d_).
-1. The function `diagonalSum(matrix, corner)` must return an integer number of the diagonal sum represented by the arguments passed during the call of that function.
+1. The function `diagonalSum(matrix, corner)` must return an integer number, the diagonal sum result.
 
 <br/>
 <br/>
@@ -80,7 +82,7 @@ A [round-robin tournament](https://en.wikipedia.org/wiki/Round-robin_tournament)
 </p>
 <p align="center"><em>Example of a round robin tournament: Group B results.</em></p>
 
-A tournament can have _g_ number of groups and each group can have _c_ number of contestants. Not all of the groups will have the same number of contestants, for example _Group C_ (no picture for this example) will have _6_ contestants instead of _5_ which _Group A_ has.
+A tournament can have _g_ number of groups and each group can have _c_ number of contestants. Not all of the groups will have the same number of contestants, for example _Group C_ (no picture for this group) will have _6_ contestants instead of _5_ which _Group A_ has.
 
 The total number of matches that can happen in a given group is calculated by:
 
@@ -90,7 +92,7 @@ The total number of matches that can happen in a given group is calculated by:
 
 Note that each match has a score, it's not just a win or a lose.
 
-At the end of a round robin tournament (or a group tournament) the sum of all of the scores in which a contestant _T_ participated will be used to determine the position of the contestant _T_. The contestant with the best score will be placed first, then the second best score and so on.
+At the end of a round robin tournament (or a group tournament) the sum of all of the scores in which a contestant _T_ participated will be used to determine the final position of the contestant _T_. The contestant with the best score will be placed first, then the second best score and so on.
 
 Example of results:
 
@@ -98,18 +100,18 @@ Example of results:
   
   <img alt="Group A positions" src="https://user-images.githubusercontent.com/7025727/72865982-662e5300-3c9f-11ea-9300-0d631b273a5e.png" width="300px">
 
-The results of a match appears on the right of the row: 
+The sum of the scores in which a particular contestant participated it's shown to the right of the row: 
   
   <img alt="scores" src="https://user-images.githubusercontent.com/7025727/72866392-b8bc3f00-3ca0-11ea-967e-abe14e9ebf05.png" width="200px">
 
 Both numbers represent the score at the end of the tournament, the black number is a minified & rounded version and the grey one is the score without any modification. The grey score is the one that we want and we will call it _final score_.
 
-The _final score_ can be calculated by getting the sum of all of scores of the matches in which a contestants participated.
+The _final score_ can be calculated by getting the sum of all scores of the matches in which a contestant participated.
 
 ## What you need to do...
 1. Design a data structure that can hold the results of all of the groups and matches with the score.
 1. Create a function that allows to report a result of a match (score).
-1. Create a function that given a contestant name it will return the position and the _final score_.
+1. Create a function that given a contestant name, returns the position and the _final score_ of that contestant.
 
 <br/>
 <br/>
