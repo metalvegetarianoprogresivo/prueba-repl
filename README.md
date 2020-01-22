@@ -1,9 +1,9 @@
 # prueba-repl
 
-- Index
-  * [Cycle Detection](#cycle-Detection)
-  * [Diagonal Sum](#diagonal-Sum)
-  * [Round Robin Tournament](#round-robin-tournament)
+### Exercises:
+* [Cycle Detection](#cycle-Detection)
+* [Diagonal Sum](#diagonal-Sum)
+* [Round Robin Tournament](#round-robin-tournament)
   
 <br/>
 <br/>
