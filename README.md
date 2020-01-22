@@ -84,12 +84,12 @@ A tournament can have _g_ number of groups and each group can have _c_ number of
 The total number of matches that can happen in a given group is calculated by:
 
 <p align="center">
-  <img alt="matches formula" src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bc%20%28c%20-%201%29%7D%7B2%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0">
+  <img alt="matches formula" src="https://latex.codecogs.com/png.latex?\dpi{300}&space;\huge&space;\frac{c&space;(c-1)}{2}" width="150px">
 </p>
 
 Note that each match has a score, it's not just a win or a lose.
 
-At the end of a round robin tournament (or a group torunament) the sum of all of the scores in which a contestant _T_ participated will be used determine a winner. The contestant with the best score will be placed first, then the second best score and so on.
+At the end of a round robin tournament (or a group tournament) the sum of all of the scores in which a contestant _T_ participated will be used determine a winner. The contestant with the best score will be placed first, then the second best score and so on.
 
 Example of results:
 
