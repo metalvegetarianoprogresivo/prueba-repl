@@ -141,10 +141,10 @@ In the above case you should first remove `3 -> 4 -> -7`, then `-6 -> 6`, leavin
 The Elo rating system is a method for calculating the relative skill levels of players in zero-sum games such as chess.
 We want to create a simple calculation that obtain the new Elo Rating of two players. You should receive data like this:
 
-* Elo Rating of Player A = 1200
-* Elo Rating of Player B = 1000
-* Player A Score = 0
-* Player B Score = 1
+* Elo Rating of Player A (Ra) = 1200
+* Elo Rating of Player B (Rb) = 1000
+* Player A Score (Sa) = 0
+* Player B Score (Sb) = 1
 
 ## Formulas
 The formula to obtain the new Elo Rating is:
@@ -153,13 +153,21 @@ The formula to obtain the new Elo Rating is:
   <img alt="matches formula" src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B100%7D%20%5Chuge%20R_%7BA%7D%5E%7B%5Cprime%20%7D%3DR_%7BA%7D&plus;K%28S_%7BA%7D-E_%7BA%7D%29" width="150px">
 </p>
 
+* Ra is the Elo Rating of Player A.
+* Sa is the Score of player A.
+* K is the K-factor.
+* Ea is the Expected outcome of player A.
+
 To obtain the value Ea, you should use the next formula:
 
 <p align="center">
   <img alt="matches formula" src="https://latex.codecogs.com/png.latex?\dpi{300}&space;\huge&space;E_{A}={\frac{1}{1+10^{(R_{B}-R_{A})/400}}}" width="150px">
 </p>
 
-To obtain the data for Player B, you’ll need to use Player Rating for Player B.
+* Rb is the Elo Rating for Player B.
+* Ra is the Elo Rating of Player A.
+
+These formulas are calculated for player A, you should do the same for player B.
 
 ## K-factor
 These are the values that should be used to calculate the K-factor on the formula based on the Elo Rating of the players.
