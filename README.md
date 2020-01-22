@@ -4,12 +4,13 @@
 * [Cycle Detection](#cycle-Detection)
 * [Diagonal Sum](#diagonal-Sum)
 * [Round Robin Tournament](#round-robin-tournament)
+* [Le Sammy Sequence](#Le-Sammy-Sequence)
   
 <br/>
 <br/>
   
 # Cycle Detection
-A linked list is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of _nodes_ which together represent a sequence. In its most basic form, each _node_ contains: data, and a reference (in other words, a _link_) to the next _node_ in the sequence. 
+A [linked list](https://en.wikipedia.org/wiki/Linked_list) is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of _nodes_ which together represent a sequence. In its most basic form, each _node_ contains: data, and a reference (in other words, a _link_) to the next _node_ in the sequence. 
 
 ![linked list](https://user-images.githubusercontent.com/7025727/72859700-5b1cf800-3c8a-11ea-8dc8-3dca1a40a8b3.png)
 
@@ -109,6 +110,25 @@ The _final score_ can be calculated by getting the sum of all of scores of the m
 1. Design a data structure that can hold the results of all of the groups and matches with the score.
 1. Create a function that allows to report a result of a match (score).
 1. Create a function that given a contestant name it will return the position and the _final score_.
+
+<br/>
+<br/>
+<br/>
+
+# Le Sammy Sequence
+A [linked list](https://en.wikipedia.org/wiki/Linked_list) is a linear collection of data elements, whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of _nodes_ which together represent a sequence. In its most basic form, each _node_ contains: data, and a reference (in other words, a _link_) to the next _node_ in the sequence. 
+
+![linked list](https://user-images.githubusercontent.com/7025727/72859700-5b1cf800-3c8a-11ea-8dc8-3dca1a40a8b3.png)
+
+Given a linked list, the sum of all consecutive nodes that results in a _0_ (zero) will be called _Le Sammy sequence_.
+
+Example of _Le Sammy sequence_:
+> 3 -> 4 -> -7 -> 5 -> -6 -> 6
+
+In the above case you should first remove `3 -> 4 -> -7`, then `-6 -> 6`, leaving only `5`.
+
+## What you need to do...
+1. Create a function that given a linked list, removes the presence of all _Le Sammy sequence_ (basically removes all the consecutive nodes that sum zero).
 
 <br/>
 <br/>
