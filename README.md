@@ -135,7 +135,49 @@ In the above case you should first remove `3 -> 4 -> -7`, then `-6 -> 6`, leavin
 <br/>
 <br/>
 <br/>
-<br/>
+
+# Elo Rating Caculator
+
+The Elo rating system is a method for calculating the relative skill levels of players in zero-sum games such as chess.
+We want to create a simple calculation that obtain the new Elo Rating of two players. You should receive data like this:
+
+* Elo Rating of Player A = 1200
+* Elo Rating of Player B = 1000
+* Player A Score = 0
+* Player B Score = 1
+
+## Formulas
+The formula to obtain the new Elo Rating is:
+
+<p align="center">
+  <img alt="matches formula" src="https://latex.codecogs.com/gif.latex?%5Cdpi%7B100%7D%20%5Chuge%20R_%7BA%7D%5E%7B%5Cprime%20%7D%3DR_%7BA%7D&plus;K%28S_%7BA%7D-E_%7BA%7D%29" width="150px">
+</p>
+
+To obtain the value Ea, you should use the next formula:
+
+<p align="center">
+  <img alt="matches formula" src="https://latex.codecogs.com/png.latex?\dpi{300}&space;\huge&space;E_{A}={\frac{1}{1+10^{(R_{B}-R_{A})/400}}}" width="150px">
+</p>
+
+To obtain the data for Player B, you’ll need to use Player Rating for Player B.
+
+## K-factor
+These are the values that should be used to calculate the K-factor on the formula based on the Elo Rating of the players.
+
+* Players below 2100: K-factor of 32 used
+* Players between 2100 and 2400: K-factor of 24 used
+* Players above 2400: K-factor of 16 used.
+
+## What you need to do...
+Your implementation should be able to:
+* Evaluate the score of player A and player B and which one is considered the winner of the match.
+* Return the new Elo Rating of both players.
+* Obtain the corresponding K factor.
+
+<br>
+<br>
+<br>
+<br>
 
 # Thank you! 😊
 
