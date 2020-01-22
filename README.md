@@ -89,7 +89,7 @@ The total number of matches that can happen in a given group is calculated by:
 
 Note that each match has a score, it's not just a win or a lose.
 
-At the end of a round robin tournament (or a group tournament) the sum of all of the scores in which a contestant _T_ participated will be used determine a winner. The contestant with the best score will be placed first, then the second best score and so on.
+At the end of a round robin tournament (or a group tournament) the sum of all of the scores in which a contestant _T_ participated will be used to determine the position of the contestant _T_. The contestant with the best score will be placed first, then the second best score and so on.
 
 Example of results:
 
@@ -107,8 +107,8 @@ The _final score_ can be calculated by getting the sum of all of scores of the m
 
 ## What you need to do...
 1. Design a data structure that can hold the results of all of the groups and matches with the score.
-1. Create a function that allows to report a match score.
-1. Create a function that given a contestant name it will give you the the position and the _final score_.
+1. Create a function that allows to report a result of a match (score).
+1. Create a function that given a contestant name it will return the position and the _final score_.
 
 <br/>
 <br/>
