@@ -13,7 +13,9 @@ A linked list is a linear collection of data elements, whose order is not given 
 
 A linked list is said to contain a cycle if any node is visited more than once while traversing the list.
 
-![cycled linked list](https://user-images.githubusercontent.com/7025727/72859796-9b7c7600-3c8a-11ea-8576-d0ffab5e8c45.png)
+<p align="center"> 
+  <img alt="cycled linked list" src="https://user-images.githubusercontent.com/7025727/72859796-9b7c7600-3c8a-11ea-8576-d0ffab5e8c45.png" width="500px">
+<p/>
 
 ## What you need to do...
 1. Create a data structure that will be used for your linked list.
@@ -22,17 +24,23 @@ A linked list is said to contain a cycle if any node is visited more than once w
 # Diagonal Sum
 Given a matrix _F_ of size _n_ by _m_ (where: _m_ >= _n_) filled with integer numbers you can calculate a diagonal sum by summing all of the numbers starting from one of the corners (_a, b, c, d_) in _F_ following a diagonal path until you reach the last number in the diagonal line.
 
-![matrix corners](https://user-images.githubusercontent.com/7025727/72861516-c1f0e000-3c8f-11ea-94b6-a2e2423c203b.png)
+<p align="center"> 
+  <img alt="matrix corners" src="https://user-images.githubusercontent.com/7025727/72861516-c1f0e000-3c8f-11ea-94b6-a2e2423c203b.png" width="600px">
+<p/>
 
 **Example:**
-![diagonal sum 1](https://user-images.githubusercontent.com/7025727/72861810-98848400-3c90-11ea-813e-94678319b53b.png)
+<p align="center"> 
+  <img alt="diagonal sum 1" src="https://user-images.githubusercontent.com/7025727/72861810-98848400-3c90-11ea-813e-94678319b53b.png" width="600px">
+<p/>
 
 In this case we start at corner _c_ of a matrix of size _n=3_ by _m=4_, which has the diagonal numbers: _[3, -7, -3]_. So we sum all the numbers: _3 + (-7) + (-3) = -7_. 
 
 Our diagonal sum is **-7**.
 
 **Another Example:**
-![diagonal sum 2](https://user-images.githubusercontent.com/7025727/72862397-a0ddbe80-3c92-11ea-8ddb-f814bff40b60.png)
+<p align="center"> 
+  <img alt="diagonal sum 2" src="https://user-images.githubusercontent.com/7025727/72862397-a0ddbe80-3c92-11ea-8ddb-f814bff40b60.png" width="600px">
+<p/>
 
 In this case we start at corner _a_ of a matrix of size _n=3_ by _m=3_, which has the diagonal numbers: _[-4, 8, 7]_. So we sum all the numbers: _-4 + 8 + 7 = 11_. 
 
